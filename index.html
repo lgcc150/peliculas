@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Incluye los archivos CSS de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <title>Películas</title>
+
+</head>
+
+<body>
+  <header id="main-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <section class="logo">
+            <img src="../img/logo.png" alt="Empresa" width="auto" height="auto" class="d-inline-block align-text-top">
+          </section>
+
+
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation" style="background-color: white;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white me-4" aria-current="page" href="#">
+                  <h3>HOME</h3>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <h3>Iniciar Sesión</h3>
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+    </div>
+  </header>
+
+
+  <div class="container">
+
+    <section class="Filter">
+      <!-- Barra de búsqueda -->
+      <div class="container">
+        <div class="row mb-2">
+
+          <div class="col-md-4 mb-3">
+            <select class="form-select bg-black text-primary" aria-label="Default select example"
+              style="font-size: 18px;">
+              <option selected>Género</option>
+              <option value="1">Acción</option>
+              <option value="2">Drama</option>
+              <option value="3">Terror</option>
+            </select>
+          </div>
+
+
+          <div class="col-md-4 mb-3">
+            <select class="form-select bg-black text-primary" aria-label="Default select example"
+              style="font-size: 18px;">
+              <option selected>Año</option>
+              <option value="1">2023</option>
+              <option value="2">2022</option>
+              <option value="3">2021</option>
+            </select>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <select class="form-select bg-black text-primary" aria-label="Default select example"
+              style="font-size: 18px;">
+              <option selected>Ordenar</option>
+              <option value="1">Top Rated</option>
+              <option value="2">Upcoming</option>
+              <option value="3">En Emisión</option>
+            </select>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <div class="carousel mb-5" style="display: flex; justify-content: center; align-items: center;">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active img-fluid" data-bs-interval="10000">
+            <img src="img/justiciero/peli1.png" class="d-block" alt="pelicula 1">
+          </div>
+          <div class="carousel-item img img-fluid" data-bs-interval="2000">
+            <img src="img/sin aire/peli2.png" class="d-block" alt="pelicula 2">
+          </div>
+          <div class="carousel-item img-fluid">
+            <img src="img/taylor/peli3.png" class="d-block" alt="pelicula 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Lista de películas -->
+
+    <main>
+      <div class="album ">
+        <div class="container">
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
+            <div class="col">
+              <div class="card bg-black hover-zoomout" style="width: 21rem;  margin: 0 auto;">
+                <a class="tarjeta" href="vistas/justiciero.html"><img src="img/justiciero/peli1.png"
+                    class="card-img-top" alt="El justiciero 3"></a>
+
+                <div class="card-body">
+                  <h5 class="card-title text-white">El Justiciero 3</h5>
+                  <p class="card-text text-white"><span class="fw-bold">Titulo Original:</span> The Equalizer 3 <br>
+                    <span class="fw-bold">Fecha Estreno:</span> 12-Octubre-2023 <br>
+                    <span class="fw-bold">Género:</span> Acción, Thriller
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+                    </div>
+                    <small class="text-muted text-light-emphasis">109 min</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="card bg-black" style="width: 21rem;  margin: 0 auto;">
+                <a class="tarjeta" href="vistas/exorcista.html"><img src="img/exorcista/peli4.png" class="card-img-top"
+                    alt="El Exorcista: Creyentes"></a>
+                <div class="card-body">
+                  <h5 class="card-title text-white">El Exorcista: Creyentes</h5>
+                  <p class="card-text text-white"><span class="fw-bold">Titulo Original:</span> The Exorcist: Believer
+                    <br>
+                    <span class="fw-bold">Fecha Estreno:</span> 05-Octubre-2023 <br>
+                    <span class="fw-bold">Género:</span> Terror
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+                    </div>
+                    <small class="text-muted text-light-emphasis">121 min</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="card bg-black" style="width: 21rem;  margin: 0 auto;">
+                <a class="tarjeta" href="vistas/objeto no identificado.html"><img src="img/UFO/peli8.png"
+                    class="card-img-top" alt="Objetos no Identificados"></a>
+
+                <div class="card-body">
+                  <h5 class="card-title text-white">Objetos no Identificados</h5>
+                  <p class="card-text text-white"><span class="fw-bold">Titulo Original:</span> Unidentified Objects
+                    <br>
+                    <span class="fw-bold">Fecha Estreno:</span> 26-Octubre-2023 <br>
+                    <span class="fw-bold">Género:</span> Comedia, Drama
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+                    </div>
+                    <small class="text-muted text-light-emphasis">100 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="card bg-black" style="width: 21rem;  margin: 0 auto;">
+                <a class="tarjeta" href="vistas/freddy's.html"><img src="img/freddy's/peli5.png" class="card-img-top"
+                    alt="Five Nights at Freddy's"></a>
+                <div class="card-body">
+                  <h5 class="card-title text-white">Five Nights at Freddy's</h5>
+                  <p class="card-text text-white"><span class="fw-bold">Titulo Original:</span> Five Nights at Freddy's
+                    <br>
+                    <span class="fw-bold">Fecha Estreno:</span> 26-Octubre-2023 <br>
+                    <span class="fw-bold">Género:</span> Terror
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+                    </div>
+                    <small class="text-muted text-light-emphasis">110 min</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="card bg-black" style="width: 21rem;  margin: 0 auto;">
+                <a class="tarjeta" href="vistas/sin aire.html"><img src="img/sin aire/peli2.png" class="card-img-top"
+                    alt="Sin Aire"></a>
+                <div class="card-body">
+                  <h5 class="card-title text-white">Sin Aire</h5>
+                  <p class="card-text text-white"><span class="fw-bold">Titulo Original:</span> Sin Aire <br>
+                    <span class="fw-bold">Fecha Estreno:</span> 19-Octubre-2023 <br>
+                    <span class="fw-bold">Género:</span> Suspenso
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+                    </div>
+                    <small class="text-muted text-light-emphasis">91 min</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="card bg-black" style="width: 21rem; margin: 0 auto;">
+                <a class="tarjeta" href="vistas/itza,tango y cacao.html"><img src="img/itza/peli9.png"
+                    class="card-img-top" alt="Itzia, Tango & Cacao"></a>
+                <div class="card-body">
+                  <h5 class="card-title text-white">Itzia, Tango & Cacao</h5>
+                  <p class="card-text text-white"><span class="fw-bold">Titulo Original:</span> Itzia, Tango & Cacao
+                    <br>
+                    <span class="fw-bold">Fecha Estreno:</span> 26-Octubre-2023 <br>
+                    <span class="fw-bold">Género:</span> Drama, Fantasia
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+                    </div>
+                    <small class="text-muted text-light-emphasis">88 min</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="card bg-black" style="width: 21rem; margin: 0 auto;">
+                <a class="tarjeta" href="vistas/saw.html"><img src="img/saw x/peli7.png" class="card-img-top"
+                    alt="Saw X: El Juego del Miedo"></a>
+
+                <div class="card-body">
+                  <h5 class="card-title text-white">Saw X: El Juego del Miedo</h5>
+                  <p class="card-text text-white"><span class="fw-bold">Titulo Original:</span> Saw X <br>
+                    <span class="fw-bold">Fecha Estreno:</span> 28-Septiembre-2023 <br>
+                    <span class="fw-bold">Género:</span> Terror
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+                    </div>
+                    <small class="text-muted text-light-emphasis">118 min</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="card bg-black" style="width: 21rem; margin: 0 auto;">
+                <a class="tarjeta" href="vistas/asesinos.html"><img src="img/asesinos/peli6.png" class="card-img-top"
+                    alt="Los Asesinos de Luna"></a>
+                <div class="card-body">
+                  <h5 class="card-title text-white">Los Asesinos de Luna</h5>
+                  <p class="card-text text-white"><span class="fw-bold">Titulo Original:</span> Killers of the Flower
+                    Moon <br>
+                    <span class="fw-bold">Fecha Estreno:</span> 19-Octubre-2023 <br>
+                    <span class="fw-bold">Género:</span> Crimen, Drama, Historia
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+                    </div>
+                    <small class="text-muted text-light-emphasis">206 min</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col">
+              <div class="card bg-black" style="width: 21rem; margin: 0 auto;">
+                <a class="tarjeta" href="vistas/taylor.html"><img src="img/taylor/peli3.png" class="card-img-top"
+                    alt="Taylor Swift: The Eras Tour"></a>
+
+                <div class="card-body">
+                  <h5 class="card-title text-white">Taylor Swift: The eras Tour</h5>
+                  <p class="card-text text-white"><span class="fw-bold">Titulo Original:</span> Taylor Swift: The Eras
+                    Tour <br>
+                    <span class="fw-bold">Fecha Estreno:</span> 02-Noviembre-2023 <br>
+                    <span class="fw-bold">Género:</span> Concierto
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
+                    </div>
+                    <small class="text-muted text-light-emphasis">168 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!--Numero de paginas-->
+    <div class="paginacion">
+      <nav class="navbar" aria-label="Page navigation example">
+        <ul class="pagination pagination-lg">
+          <li class="page-item">
+            <a class="page-link bg-transparent" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link bg-transparent" href="#">1</a></li>
+          <li class="page-item"><a class="page-link bg-transparent" href="#">2</a></li>
+          <li class="page-item"><a class="page-link bg-transparent" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link bg-transparent" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <footer class="footer text-center w-100 mt-4 mb-4 bg-transparent">
+    <p class="text-white">© 2023, made by
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-vcard-fill"
+        viewBox="0 0 16 16">
+        <path
+          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5ZM9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8Zm1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5Zm-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96c.026-.163.04-.33.04-.5ZM7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z" />
+      </svg>
+      Gustavo Cortes
+    </p>
+
+  </footer>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Inicio de Sesión</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+
+
+          <form class="px-4 py-3">
+            <div class="mb-3">
+              <label for="exampleDropdownFormEmail1" class="form-label">Direccion de correo</label>
+              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@ejemplo.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                <label class="form-check-label" for="dropdownCheck">
+                  Recordarme
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+          </form>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">No tienes cuenta? <span class="text-primary text-decoration-underline">Crear
+              cuenta</span> </a>
+          <a class="dropdown-item text-primary text-decoration-underline" href="#">Olvidó la contraseña?</a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Incluye los archivos JS de Bootstrap y jQuery al final del cuerpo del documento -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

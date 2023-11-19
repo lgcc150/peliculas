@@ -1,0 +1,76 @@
+body{
+  background-image: url(../img/fondo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header{
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+.logo{
+  margin-right: 3%;
+}
+
+.Filter{
+  padding-bottom: 1.5%;
+}
+
+.paginacion{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding-top: 4%; 
+  padding-bottom: 4%;
+  background-color: black; 
+}
+
+.tarjeta{
+  position: relative;
+  border: none;
+  transition: .4s ease-in;
+  z-index: 1;
+}
+
+.tarjeta:hover{
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
+  --color: #ffa260;
+  --hover: #e5ff60;
+}
+
+.descripcion{
+  font-size: 20px;
+  font-family: 'Kalam', cursive;
+}
+
+.badge{
+  width: 100px;
+}
+
+.actores{
+  background-color: #212F3C;
+}
+
+.comentarios{
+
+background-color: #4D5656 ;  
+  margin: 0 auto;
+}
+
+.area{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.tcomentario{
+  font-size: 20px;
+}
+
+.boton{
+  font-size: 18px;
+}
