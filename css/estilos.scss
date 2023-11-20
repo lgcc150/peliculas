@@ -1,0 +1,86 @@
+/*Variables SASS*/
+$imagengb: url(../img/fondo.png);
+$headerpd: 1.5%;
+$Tletra: 'Kalam', cursive;
+$tcomentario: 20px;
+$boton: 18px;
+
+/*Codigo CSS*/
+body{
+    background-image: $imagengb; /*Variable SASS*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  header{
+    padding-top: $headerpd; /*Variable SASS*/
+    padding-bottom: $headerpd; /*Variable SASS*/
+  }
+  
+  .logo{
+    margin-right: 3%;
+  }
+  
+  .Filter{
+    padding-bottom: $headerpd;
+  }
+  
+  .paginacion{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 4%; 
+    padding-bottom: 4%;
+    background-color: black; 
+  }
+  
+  .tarjeta{
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+  }
+  
+  .tarjeta:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    -webkit-transform: translateY(-0.25em);
+    transform: translateY(-0.25em);
+    --hover: #e5ff60;
+  }
+  
+  .descripcion{
+    font-size: 20px;
+    font-family: $Tletra; /*Variable SASS*/
+  }
+  
+  .badge{
+    width: 100px;
+  }
+  
+  .actores{
+    background-color: #212F3C;
+  }
+  
+  /*Anidación de Selectores*/
+  .comentarios{
+  
+    background-color: #4D5656 ;  
+    margin: 0 auto;
+    .tcomentario{
+        font-size: $tcomentario; /*Variable SASS*/
+    }
+    .area{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .boton{
+        font-size: $boton; /*Variable SASS*/
+      }
+  }
+  
+  
+  
+  
+  

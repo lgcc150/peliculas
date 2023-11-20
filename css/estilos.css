@@ -1,76 +1,74 @@
-body{
-  background-image: url(../img/fondo.png);
+@charset "UTF-8";
+/*Variables SASS*/
+/*Codigo CSS*/
+body {
+  background-image: url(../img/fondo.png); /*Variable SASS*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-header{
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+header {
+  padding-top: 1.5%; /*Variable SASS*/
+  padding-bottom: 1.5%; /*Variable SASS*/
 }
 
-.logo{
+.logo {
   margin-right: 3%;
 }
 
-.Filter{
+.Filter {
   padding-bottom: 1.5%;
 }
 
-.paginacion{
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  padding-top: 4%; 
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4%;
   padding-bottom: 4%;
-  background-color: black; 
+  background-color: black;
 }
 
-.tarjeta{
+.tarjeta {
   position: relative;
   border: none;
-  transition: .4s ease-in;
+  transition: 0.4s ease-in;
   z-index: 1;
 }
 
-.tarjeta:hover{
+.tarjeta:hover {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  -webkit-transform: translateY(-0.25em);
   transform: translateY(-0.25em);
-  --color: #ffa260;
   --hover: #e5ff60;
 }
 
-.descripcion{
+.descripcion {
   font-size: 20px;
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive; /*Variable SASS*/
 }
 
-.badge{
+.badge {
   width: 100px;
 }
 
-.actores{
+.actores {
   background-color: #212F3C;
 }
 
-.comentarios{
-
-background-color: #4D5656 ;  
+/*Anidación de Selectores*/
+.comentarios {
+  background-color: #4D5656;
   margin: 0 auto;
 }
-
-.area{
+.comentarios .tcomentario {
+  font-size: 20px; /*Variable SASS*/
+}
+.comentarios .area {
   width: 50%;
   margin: 0 auto;
 }
-
-.tcomentario{
-  font-size: 20px;
-}
-
-.boton{
-  font-size: 18px;
-}
+.comentarios .boton {
+  font-size: 18px; /*Variable SASS*/
+}/*# sourceMappingURL=estilos.css.map */
