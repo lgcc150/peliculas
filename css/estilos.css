@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Variables SASS*/
+/*Interpolacion*/
 /*Codigo CSS*/
 body {
   background-image: url(../img/fondo.png); /*Variable SASS*/
@@ -29,6 +30,7 @@ header {
   padding-top: 4%;
   padding-bottom: 4%;
   background-color: black;
+  /*Interpolacion*/
 }
 
 .tarjeta {
@@ -50,16 +52,19 @@ header {
 }
 
 .badge {
-  width: 100px;
+  width: 100%;
+  /*Interpolacion*/
 }
 
 .actores {
   background-color: #212F3C;
+  /*Interpolacion*/
 }
 
 /*Anidación de Selectores*/
 .comentarios {
   background-color: #4D5656;
+  /*Interpolacion*/
   margin: 0 auto;
 }
 .comentarios .tcomentario {
@@ -67,6 +72,7 @@ header {
 }
 .comentarios .area {
   width: 50%;
+  /*Interpolacion*/
   margin: 0 auto;
 }
 .comentarios .boton {

@@ -5,6 +5,15 @@ $Tletra: 'Kalam', cursive;
 $tcomentario: 20px;
 $boton: 18px;
 
+/*Interpolacion*/
+@mixin bgcolor($color){
+    background-color: $color;
+}
+
+@mixin tamano($width){
+    width: $width;
+}
+
 /*Codigo CSS*/
 body{
     background-image: $imagengb; /*Variable SASS*/
@@ -33,7 +42,7 @@ body{
     align-items: center; 
     padding-top: 4%; 
     padding-bottom: 4%;
-    background-color: black; 
+    @include bgcolor(black);/*Interpolacion*/
   }
   
   .tarjeta{
@@ -56,23 +65,24 @@ body{
   }
   
   .badge{
-    width: 100px;
+    @include tamano(100%);/*Interpolacion*/
   }
   
   .actores{
-    background-color: #212F3C;
+    @include bgcolor(#212F3C);/*Interpolacion*/
+    
   }
   
   /*Anidación de Selectores*/
   .comentarios{
-  
-    background-color: #4D5656 ;  
+    @include bgcolor(#4D5656);  /*Interpolacion*/
+    
     margin: 0 auto;
     .tcomentario{
         font-size: $tcomentario; /*Variable SASS*/
     }
     .area{
-        width: 50%;
+        @include tamano(50%);/*Interpolacion*/
         margin: 0 auto;
     }
     .boton{
